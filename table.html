@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Group selector */
+        table,th,td,caption{
+            border: 2px solid  black;
+            border-collapse: collapse;
+            padding: 5px;
+            text-align: center;
+            font-size: x-large;
+        }
+        caption{
+            background-color: deeppink;
+
+        }
+        th{
+            background-color: blueviolet;
+        }
+        td{
+            background-color: cyan;
+        }
+        .t{
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- table -->
+
+    <table>
+        <thead>
+            <caption>students details</caption>
+            <tr>
+                <th>name</th>
+                <th>course</th>
+                <th>timing</th>
+                <th>age</th>
+                <th>phone</th>
+
+                <tbody>
+                    <tr>
+                        <td>thiru</td>
+                        <td  rowspan="2">mern stack</td>
+                        <td>9.30-11.30</td>
+                        <td>22</td>
+                        <td>9080614565</td>
+                    </tr>
+
+                    <tr>
+                        <td>mugil</td>
+                        <td>9.30-11.30</td>
+                        <td rowspan="3" class="t">20</td>
+                        <td>9874652348</td>
+                    </tr>
+
+                    <tr>
+                        <td>manish</td>
+                        <td>python</td>
+                        <td>9.30-11.30</td>
+                        <td>9453677676</td>
+                    </tr>
+
+                    <tr>
+                        <td>krishna</td>
+                        <td  colspan="2">data science</td>
+                        <!-- <td>9.30-11.30</td> -->
+                        <!-- <td>19</td> -->
+                        <td>9457566000</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5">&copy; by thiru kumaran</td>
+                    </tr>
+                </tfoot>
+                
+            
+        </thead>
+    </table>
+
+    <!-- HTML Entites -->
+     <h1>&#8452; &#8454;</h1>
+     <h2>&#8459; &#8460;</h2>
+
+
+     <!-- Html inline/block level elements -->
+      <i>Hello everyone</i>
+      <b>Thiru kumaran</b>
+      <a href="https://www.toptal.com/designers/htmlarrows/symbols/">Toptal</a>
+
+      <h1 style="color: crimson;">Ajith <span style="color: gold;">kumar</span></h1>
+</body>
+</html>
