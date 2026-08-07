@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        header{
+            background-color: skyblue;
+            height: 50px;
+            width: 100vw;
+            position: fixed;
+            
+        }
+
+        ul{
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            padding: 0px;
+        }
+
+        li{
+            list-style-type: none;
+            font-size: larger;
+            font-weight: 700;
+        }
+
+        div{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        a{
+            text-decoration-line: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#h">Home</a></li>
+                <li><a href="#p">Product</a></li>
+                <li><a href="#m">My orders</a></li>
+                <li><a href="#s">Service</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <div style="background-color: aqua;" id="h"><h1>Home</h1></div>
+        <div style="background-color: blueviolet;" id="p"><h1>Product</h1></div>
+        <div style="background-color: coral;" id="m"><h1>My orders</h1></div>
+        <div style="background-color: fuchsia;" id="s"><h1>Service</h1></div>
+    </main>
+    
+</body>
+</html>
