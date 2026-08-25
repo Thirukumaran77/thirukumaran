@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* font awesome */
+        a:link{
+            color: rgb(255, 2, 2);
+        }
+        a:visited{
+            color: black;
+        }
+        /* media query for responsive design */
+        @media screen and (max-width:575px){
+            .rs{
+                background-color: rgb(0, 17, 255);
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            h1{
+                color: burlywood;
+            }
+            h2{
+                color: darkorange;
+            }
+        }
+        /* small */
+        @media screen and (min-width:576px) and (max-width:767px){
+            .rs{
+                background-color: rgb(31, 17, 153);
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            h1{
+                color: rgb(0, 0, 0);
+                font-size: 45px;
+            }
+            h2{
+                color: darkgoldenrod;
+                font-size: 36px;
+            }
+            img{
+                border:5px black;
+                border-radius: 30%;
+            }
+        }
+        /* medium */
+          @media screen and (min-width:768px) and (max-width:991px) {
+
+            .rs{
+                background-color: coral;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /* flex-direction: column; */
+                gap: 100px;
+                
+            }
+
+            h1{
+               color: cornsilk; 
+               font-size: 55px;
+            }
+            h2{
+                color: gray;
+                font-size: 40px;
+            }
+
+            img{
+                border: 2px solid whitesmoke;
+                border-radius: 30%;
+            }
+
+
+        }   
+        /* large */
+        @media screen and (min-width:992px) and (max-width:1119px){
+            .rs{
+                background-color: darkcyan;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 100px;
+            }
+            h1{
+                color: cornsilk;
+                font-size: 65px;
+            }
+            h2{
+                color:darkred;
+                font-size: 55px;
+            }
+        }
+        /* position */
+        .ps{
+            height: 100vh;
+            background-color: burlywood;
+        }
+        .box{
+            height: 150px;
+            width: 150px;
+            background-color: aqua;
+        }
+        .static{
+            position:static;
+            bottom: 100px;
+            left: 200px;
+        }
+        .relative{
+            position: relative;
+            top: 200px;
+            left: 250px;
+        }
+        .absolute{
+            position: absolute;
+            top: -60px;
+            left: -60px;
+        }
+        .fixed{
+            position: fixed;
+            top: 200px;
+            left: 300px;
+        }
+        .sticky{
+            position: sticky;
+            top: 300px;
+            left: 150px;
+            
+        }
+        /* z-index */
+        .zi{
+            position: absolute;
+            top: 2500px;
+            left: 30px;
+        }
+        /* over-flow */
+        .or{
+            height: 150vh;
+            background-color: darksalmon;
+        }
+        .orr{
+            width: 200px;
+            height: 200px;
+            background-color: bisque;
+        }
+        .v{
+            overflow: visible;
+        }
+        .h{
+            overflow: hidden;
+        }
+        .s{
+            overflow: scroll;
+        }
+        .a{
+            overflow: auto;
+        }
+
+            
+    </style>
+
+</head>
+<body>
+    <!-- icons/font-awesome -->
+    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+    <!-- media query -->
+    <div class="rs">
+        <div>
+            <h1>Ajith kumar</h1>
+            <h2>Actor</h2>
+        </div>
+        <img src="ajithkumar.jpg" alt="" width="200" height="230">
+
+    </div>
+    <!-- static -->
+    <div class="ps">
+        <div class="box static"></div>
+
+    </div>
+    <!-- relative -->
+    <div class="ps" style="background-color: tomato;">
+        <div class="box relative"></div>
+
+    </div>
+    <!-- absolute -->
+    <div class="ps" style="background-color: blueviolet;">
+        <div class="box absolute"></div>
+
+    </div>
+    <!-- fixed -->
+    <div class="ps" style="background-color: darkgray;">
+        <!-- <div class="box fixed"></div> -->
+
+    </div>
+    <!-- sticky -->
+    <div class="ps" style="background-color: chartreuse;">
+        <div class="box sticky"></div>
+
+    </div>
+     <!-- z-index -->
+    <div class="ps" style="background-color: rgb(255, 251, 0);">
+        <h1>z-index</h1>
+    <div class="box zi" style="background-color: cadetblue; z-index: 1;"></div>
+    <div class="box zi" style="background-color: rgb(80, 12, 136); z-index: 9;"></div>
+    <div class="box zi" style="background-color: rgb(160, 95, 127); z-index: 5;"></div>
+    <div class="box zi" style="background-color: rgb(0, 155, 8); z-index: 3;"></div>
+    </div>
+
+    <!-- over-flow -->
+    <div class="or">
+        <h1>over-flow</h1>
+        <div style="height: 100vh; display: flex; justify-content: space-around; align-items:center;">
+        
+           <div class="orr v"> Lorem ipsum dolor sit amet conse adipisicing elit. Impedit laudantium reprehenderit veniam eos. Hic eius amet, iure libero ab molestiae, debitis vel porro odio aperiam laboriosam et optio laborum aliquam, quia architecto repellendus maxime! Corrupti eveniet adipisci qui architecto ducimus, animi sit harum ex exercitationem repellat vitae tempore. Corporis, placeat.</div>
+           <div class="orr h"> Lorem ipsum dolor sit amet conse adipisicing elit. Impedit laudantium reprehenderit veniam eos. Hic eius amet, iure libero ab molestiae, debitis vel porro odio aperiam laboriosam et optio laborum aliquam, quia architecto repellendus maxime! Corrupti eveniet adipisci qui architecto ducimus, animi sit harum ex exercitationem repellat vitae tempore. Corporis, placeat.</div>
+           <div class="orr s"> Lorem ipsum dolor sit amet conse adipisicing elit. Impedit laudantium reprehenderit veniam eos. Hic eius amet, iure libero ab molestiae, debitis vel porro odio aperiam laboriosam et optio laborum aliquam, quia architecto repellendus maxime! Corrupti eveniet adipisci qui architecto ducimus, animi sit harum ex exercitationem repellat vitae tempore. Corporis, placeat.</div>
+           <div class="orr a"> Lorem ipsum dolor sit amet conse adipisicing elit. Impedit laudantium reprehenderit veniam eos. Hic eius amet, iure libero ab molestiae, debitis vel porro odio aperiam laboriosam et optio laborum aliquam, quia architecto repellendus maxime! Corrupti eveniet adipisci qui architecto ducimus, animi sit harum ex exercitationem repellat vitae tempore. Corporis, placeat.</div>
+
+
+
+        </div>
+
+    </div>
+
+    
+
+
+    
+</body>
+</html>
