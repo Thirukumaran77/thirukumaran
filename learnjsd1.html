@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 1 javascript</title>
+</head>
+<body>
+      <h1 id="heading">Praveen</h1>
+    <p></p>
+    <p></p>
+    <h2 class="sub_title"></h2>
+    
+    <!-- query selector -->
+     <h3></h3>
+     <h1 class="cc"></h1>
+     <h1 id="dd"></h1>
+    
+
+    <script>
+        // Variable
+        // Variable is store the value and Allocate memory.
+        // scope variable_name = value;
+        let name = "Praveen";
+        console.log(name);
+        let a = 10;
+        let b = 5;
+        a = 20;
+        console.log("Add value : ",a+b)
+
+        // DOM
+        // document.write("Hello Hema Priya");
+        // document.writeln("Hello Logesh")
+
+        // DOM id selector
+        document.getElementById("heading").innerHTML="THIRU KUMARAN"
+
+        //DOM Class Selector
+        document.getElementsByClassName("sub_title")[0].innerHTML="Explore React.js"
+
+        //DOM QuerySelector
+        document.querySelector("h3").innerHTML="Java";
+        document.querySelector(".cc").innerHTML="Python";
+        document.querySelector("#dd").innerHTML="Springboot";
+
+        
+    </script>
+     <script src="./learn_js_1.js"></script>
+    
+</body>
+</html>
