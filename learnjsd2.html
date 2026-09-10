@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script day-2</title>
+</head>
+<body>
+    <!-- CSS DOM -->
+     <h1></h1>
+<hr>
+    <!-- Data types -->
+     <h1>Data types</h1>
+
+
+     <h1 class="ts"></h1>
+     <h1 class="ts"></h1>
+     <h1 class="ts"></h1>
+     <h1 class="ts"></h1>
+     <h1 class="ts"></h1>
+<hr>
+     <!-- Arithmetic Operator -->
+      <h1>Arithmatic Operator</h1>
+      <div id="ak">
+        <h2 class="ar"></h2>
+        <h2 class="ar"></h2>
+        <h2 class="ar"></h2>
+        <h2 class="ar"></h2>
+        <h2 class="ar"></h2>
+      </div>
+<hr>
+    <!-- Assignment Operator -->
+     <h1>Assignment Operator</h1>
+     <div id="cc">
+        <h2 class="as"></h2>
+        <h2 class="as"></h2>
+        <h2 class="as"></h2>
+        <h2 class="as"></h2>
+        <h2 class="as"></h2>
+        <h2 class="as"></h2>
+        <h2 class="as"></h2>
+     </div>
+<hr>
+     <!-- Conditional Operator -->
+      <h1>Conditional Operator</h1>
+      <div class="cc">
+        <h1 class="data"></h1>
+        <h1 class="data"></h1>
+        <h1 class="data"></h1>
+        <h1 class="data"></h1>
+
+        <h2 class="cn"></h2>
+        <h2 class="cn"></h2>
+        <h2 class="cn"></h2>
+        <h2 class="cn"></h2>
+        <h2 class="cn"></h2>
+        <h2 class="cn"></h2>
+      </div>
+     <script>
+        document.getElementsByTagName("h1")[0].innerHTML="Thirukumaran"
+        document.getElementsByTagName("h1")[0].style.color="red"
+        document.getElementsByTagName("h1")[0].style.backgroundColor="grey"
+
+        
+        // data types
+        const name = "logesh";
+        document.getElementsByClassName("ts")[0].innerHTML=name+" - "+typeof(name);
+        const age = 20;
+        document.getElementsByClassName("ts")[1].innerHTML=age+" - "+typeof(age);
+        const cgpa = 8.50; 
+        document.getElementsByClassName("ts")[2].innerHTML=cgpa+" - "+typeof(cgpa);
+        const is_check = true;
+        document.getElementsByClassName("ts")[3].innerHTML=is_check+" - "+typeof(is_check);
+        const check = false;
+        document.getElementsByClassName("ts")[4].innerHTML=check+" - "+typeof(check);
+
+
+
+        // operators
+        // Arithmatic Operator
+        // +,_,*,/,%-get the remainder of divition
+        let a,b;
+        a = 5;
+        b = 2;
+
+
+        document.getElementsByClassName("ar")[0].innerHTML="Add value : "+(a+b);
+        document.getElementsByClassName("ar")[1].innerHTML="Subtract value : "+(a-b);
+        document.getElementsByClassName("ar")[2].innerHTML="Multiple value : "+(a*b);
+        document.getElementsByClassName("ar")[3].innerHTML="divide value : "+(a/b);
+        document.getElementsByClassName("ar")[4].innerHTML="Modules value : "+(a%b);
+        document.getElementById("ak").style.color = "red";
+
+
+        // Assignment Operator
+        // +=,-=,*=,/=,%=
+        let c =10;
+
+
+       document.getElementsByClassName("as")[0].innerHTML="C value : "+(c);
+       document.getElementsByClassName("as")[1].innerHTML="+= value : "+(c+=4);
+       document.getElementsByClassName("as")[2].innerHTML="-= value : "+(c-=10);
+       document.getElementsByClassName("as")[3].innerHTML="*= value : "+(c*=2);
+       document.getElementsByClassName("as")[4].innerHTML="/= value : "+(c/=4);
+       document.getElementsByClassName("as")[5].innerHTML="%= value : "+(c%=2);
+       document.getElementsByClassName("as")[6].innerHTML="C value : "+(c);
+       document.getElementById("cc").style.color = "green";
+
+
+    // Conditional Operator
+    // ==,!=,<,>,<=,>=
+
+    let a1=10,a2=20,a3=30,a4=20;
+
+    document.getElementsByClassName("data")[0].innerHTML`a1 value : ${a1}`
+    document.getElementsByClassName("data")[0].innerHTML`a2 value : ${a2}`
+    document.getElementsByClassName("data")[0].innerHTML`a3 value : ${a3}`
+    document.getElementsByClassName("data")[0].innerHTML`a4 value : ${a4}`
+
+
+
+     </script>
+    
+</body>
+</html>
